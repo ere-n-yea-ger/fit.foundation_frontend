@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  background-color: #09090b;
+  color: #f4f4f5;
+}
+
+::selection {
+  background-color: #ccff00;
+  color: #09090b;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #18181b;
+}
+::-webkit-scrollbar-thumb {
+  background: #3f3f46;
+  border: 2px solid #18181b;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ccff00;
+}
+
+/* Kill default focus ring, replace with a visible lime one for a11y */
+:focus-visible {
+  outline: 2px solid #ccff00;
+  outline-offset: 3px;
+}
+
+.text-stroke {
+  color: #ccff00;
+}
+
+@supports (-webkit-text-stroke: 1px #ccff00) {
+  .text-stroke {
+    -webkit-text-stroke: 1.5px #ccff00;
+    color: transparent;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
