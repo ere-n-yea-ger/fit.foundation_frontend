@@ -6,7 +6,7 @@ This platform connects donors directly with the cause, facilitating in-kind dona
 
 ## 🚀 Key Features
 
-*   **Direct Donation Flow:** Completely bypasses complex payment gateways. Donors connect instantly with the founder via pre-filled WhatsApp links for UPI/GPay details.
+*   **Direct Donation Flow:** Bypasses complex payment gateways. Donors connect instantly with the founder via pre-filled WhatsApp links for UPI/GPay details.
 *   **Interactive UI/UX:** Features smooth scroll animations, 3D tilt effects on sponsorship cards, and a responsive image carousel.
 *   **Fully Responsive:** Optimized for both desktop and mobile viewing, ensuring full-color media engagement across all devices.
 *   **Zero Friction Sponsoring:** Specific "Sponsor a Need" cards (e.g., Rackets, Books, Shoes) route directly to targeted donation requests.
@@ -17,12 +17,13 @@ This platform connects donors directly with the cause, facilitating in-kind dona
 *   **Styling:** [Tailwind CSS](https://tailwindcss.com/)
 *   **Animations:** [Framer Motion](https://www.framer.com/motion/)
 *   **Icons:** [Lucide React](https://lucide.dev/)
-*   **Deployment:** [Vercel](https://vercel.com/)
+*   **Hosting:** [Vercel](https://vercel.com/)
 
-## 💻 Running Locally
+## 🌐 Live Deployment
 
-To run this project on your local machine:
+This project is officially deployed and hosted on **Vercel**. 
 
-1. **Clone the repository and navigate into the project folder:**
-   ```bash
-   cd fit-foundation
+To push any future code updates or photo changes to the live production site, simply open the terminal in the project directory and run:
+
+```bash
+npx vercel --prod
